@@ -6,5 +6,5 @@ This is the client side.
 
 ## How to use
 Start the program and wait for GUI to load. Press the "Set Format"  on the top right and select between mkv, mp4 or avi formats.
-After at the bottom of the GUI will appear two drodown menus and a button. Choose protocol and a video ans press submit.
+After at the bottom of the GUI will appear two dropdown menus and a button. Choose protocol and a video and press submit.
 The program will close and the video will start playing.
