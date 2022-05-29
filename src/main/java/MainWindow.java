@@ -27,10 +27,10 @@ public class MainWindow extends JFrame {
     private JComboBox videoBoxSelector, protocolSelector;
     private JButton videoBoxSelectorButton;
     private SocketClient sc;
-
     private String strBitrate;
 
     MainWindow() {
+
         /* Setting title. */
         super("MitchTV Client");
 
@@ -70,7 +70,7 @@ public class MainWindow extends JFrame {
             panelsSetup();
             menuSetup();
             selectorSetup();
-            addPanelsToFrame();
+            organizingPanels();
             implementBehaviors();
             log.debug("Client: GUI ready.");
         }
@@ -147,9 +147,9 @@ public class MainWindow extends JFrame {
             protocolSelector.setVisible(false);
         }
 
-        private void addPanelsToFrame() {
+        private void organizingPanels() {
 
-            /* Adding elements to panels. */
+            /* Organizing panels. */
             bottomPanel.add(protocolSelector);
             bottomPanel.add(videoBoxSelector);
             bottomPanel.add(videoBoxSelectorButton);
