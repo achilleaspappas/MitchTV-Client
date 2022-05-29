@@ -303,9 +303,8 @@ public class MainWindow extends JFrame {
                     commandLineArgs.add("tcp://127.0.0.1:5100");
                 } else if (protocol.equals("RTP/UDP") | (protocol.equals("DEFAULT") && (selectedVideoResolution.equals("720") | selectedVideoResolution.equals("1080")))) {
                     commandLineArgs.add("-protocol_whitelist");
-                    commandLineArgs.add("file,rtp,udp");
+                    commandLineArgs.add("\"file,rtp,udp\"");
                     commandLineArgs.add("-i");
-                    commandLineArgs.add("video.sdp");
                     commandLineArgs.add("rtp://127.0.0.1:5004");
                 }
 
